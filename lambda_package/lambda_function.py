@@ -124,7 +124,7 @@ def generate_pdf(json_data):
                 if os.path.exists(image_path):
                     image = pdf.load_image("auto", image_path, "")
                     if image != -1:
-                        pdf.fit_image(image, 100, y_pos - 100, "scale=1")
+                        pdf.fit_image(image, 200, y_pos - 100, "scale=3")
                         y_pos -= 150
                         pdf.close_image(image)
 
